@@ -1,5 +1,5 @@
 SUBDIRS = software-page-utils
-AGENTSMITH_DOWNLOAD_URL=https://www.guengel.ch/myapps/agentsmith/downloads
+AGENTSMITH_DOWNLOAD_URL=https://agentsmith.guengel.ch/downloads
 
 FRAGASS = software-page-utils/bin/fragass
 FRAGASS_TEMPLATE = -template templates/html_template.html
