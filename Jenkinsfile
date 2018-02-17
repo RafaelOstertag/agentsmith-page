@@ -16,7 +16,7 @@ node("master") {
 
 	stage("deploy") {
 	    sshagent(['16bce2a7-451d-4be5-82cb-68efab430517']) {
-		sh "env REMOTE_USER=agentsmith-deploy REMOTE_HOST=eventhorizon.dmz.kruemel.home REMOTE_BASE=/var/www/jails/agentsmith/usr/local/www/apache24/data scripts/deploy.sh"
+		sh "env REMOTE_USER=agentsmith-deploy REMOTE_HOST=eventhorizon.dmz.kruemel.home REMOTE_BASE=/var/www/jails/agentsmith/usr/local/www/apache24/data software-page-utils/deploy.sh"
 	    }
 	}
 	currentBuild.result = 'SUCCESS'
