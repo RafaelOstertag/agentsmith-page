@@ -1,0 +1,10 @@
+*~
+public_html/*.html
+public_html/Sitemap.xml
+work/
+agentsmith*.tar.xz
+scripts/bin/
+scripts/pkg/
+scripts/src/gopkg.in/
+untar-agentsmith
+work-dir

@@ -1,0 +1,18 @@
+---
+
+- version: 0.3
+  title: Agentsmith 0.3
+  dists:
+    - .tar.xz
+    - .tar.gz
+    - .tar.bz2
+- version: 0.2
+  title: Agentsmith 0.2
+  dists:
+    - .tar.gz
+    - .tar.bz2
+- version: 0.2
+  title: Agentsmith 0.2
+  dists:
+    - .tar.gz
+    - .tar.bz2

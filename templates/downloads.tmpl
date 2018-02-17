@@ -1,0 +1,25 @@
+<main class="container">
+  <section>
+    <header>
+      <h1 class="mt-4">Downloads</h1>
+    </header>
+
+    <h2>Sources</h2>
+    {{range .Versions}}
+    {{/* capture the version, it is used later on in the inner range */}}
+    {{ $version := .Version }}
+    <div class="row">
+      <div class="col-sm-8">
+	{{.Title}}
+      </div>
+      <div class="col-sm-4">
+	{{range .Dists}}
+	<a href="downloads/agentsmith-{{ $version }}{{.}}">{{.}}</a>
+	{{end}}
+      </div>
+    </div>
+    {{end}}
+  </section>
+</main>
+	
+		

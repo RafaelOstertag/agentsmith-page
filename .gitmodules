@@ -1,0 +1,3 @@
+[submodule "software-page-utils"]
+	path = software-page-utils
+	url = https://github.com/RafaelOstertag/software-page-utils.git

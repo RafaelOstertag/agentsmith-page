@@ -1,0 +1,57 @@
+<main class="container">
+  <section class="jumbotron mt-3">
+    <header>
+      <h1>Agentsmith</h1>
+      <p class="lead">Monitor Log Files for Anomalies</p>
+    </header>
+    <p>Agentsmith is a daemon that continuously monitors a log file
+      for break-in attempts by remote hosts. Upon detection of a
+      break-in attempt, it launches a user defined script or
+      application, which can do virtually anything from sending mails to
+      whatever you might think of.</p>
+
+    <p>The criteria what is considered a break-in attempt can be
+      configured by means of a regular expression.</p>
+  </section>
+</main>
+
+<section class="container">
+  <div class="row justify-content-md-center">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+	  <div class="card-title">
+	    <h2>Latest Release</h2>
+          </div>
+          <p class="card-text">The latest source code release is <a href="downloads/{{.Tarball}}">{{.Title}}</a></p>
+	</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>GitHub</h2>
+          </div>
+          <p class="card-text">
+            Source code is on <a href="https://github.com/RafaelOstertag/agentsmith">GitHub</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+	<div class="card-body">
+          <div class="card-title">
+            <h2>Found a Bug?</h2>
+          </div>
+          <p class="card-text">
+            Report it in <a href="https://bugs.guengel.ch/enter_bug.cgi?product=agentsmith">Bugzilla</a>.
+          </p>
+	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
