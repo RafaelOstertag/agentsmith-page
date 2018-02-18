@@ -88,15 +88,15 @@ $(AGENTSMITH_SRC_DIR)/doc/agentsmith_exclude.xhtml: $(AGENTSMITH_SRC_DIR)/doc/ag
 	cat $< | groff -m man -T html | $(TIDY) -c -q -utf8 -asxml > $@ || true
 
 $(AGENTSMITH_SRC_DIR)/doc/agentsmith.man: untar-agentsmith
-	cd $(AGENTSMITH_SRC_DIR) ; ./configure LDFLAGS=-I/usr/local/include CFLAGS=-L/usr/local/bin
+	cd $(AGENTSMITH_SRC_DIR) ; ./configure CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib
 	$(MAKE) -C $(AGENTSMITH_SRC_DIR)/doc
 
 $(AGENTSMITH_SRC_DIR)/doc/agentsmith.conf.man: untar-agentsmith
-	cd $(AGENTSMITH_SRC_DIR) ; ./configure LDFLAGS=-I/usr/local/include CFLAGS=-L/usr/local/bin
+	cd $(AGENTSMITH_SRC_DIR) ; ./configure CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib
 	$(MAKE) -C $(AGENTSMITH_SRC_DIR)/doc
 
 $(AGENTSMITH_SRC_DIR)/doc/agentsmith_exclude.man: untar-agentsmith
-	cd $(AGENTSMITH_SRC_DIR) ; ./configure LDFLAGS=-I/usr/local/include CFLAGS=-L/usr/local/lib
+	cd $(AGENTSMITH_SRC_DIR) ; ./configure CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib
 	$(MAKE) -C $(AGENTSMITH_SRC_DIR)/doc
 
 work-dir:
