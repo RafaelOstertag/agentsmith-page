@@ -96,7 +96,7 @@ $(AGENTSMITH_SRC_DIR)/doc/agentsmith.conf.man: untar-agentsmith
 	$(MAKE) -C $(AGENTSMITH_SRC_DIR)/doc
 
 $(AGENTSMITH_SRC_DIR)/doc/agentsmith_exclude.man: untar-agentsmith
-	cd $(AGENTSMITH_SRC_DIR) ; ./configure LDFLAGS=-I/usr/local/include CFLAGS=-L/usr/local/bin
+	cd $(AGENTSMITH_SRC_DIR) ; ./configure LDFLAGS=-I/usr/local/include CFLAGS=-L/usr/local/lib
 	$(MAKE) -C $(AGENTSMITH_SRC_DIR)/doc
 
 work-dir:
