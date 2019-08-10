@@ -1,6 +1,6 @@
 properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '', daysToKeepStr: '', numToKeepStr: '5')), pipelineTriggers([githubPush(), pollSCM('')])])
 
-node("master") {
+node("odin") {
     try {
 	stage("checkout") {
 	    checkout scm
@@ -15,8 +15,8 @@ node("master") {
 	}
 
 	stage("deploy") {
-	    sshagent(['16bce2a7-451d-4be5-82cb-68efab430517']) {
-		sh "env REMOTE_USER=agentsmith-deploy REMOTE_HOST=eventhorizon.dmz.kruemel.home REMOTE_BASE=/var/www/jails/agentsmith/usr/local/www/apache24/data software-page-utils/deploy.sh"
+	    sshagent(['897482ed-9233-4d56-88c3-254b909b6316']) {
+		sh "env REMOTE_USER=ec2-deploy REMOTE_HOST=ec2-52-29-59-221.eu-central-1.compute.amazonaws.com REMOTE_BASE=/data/www/agentsmith.guengel.ch/ software-page-utils/deploy.sh"
 	    }
 	}
 	currentBuild.result = 'SUCCESS'
