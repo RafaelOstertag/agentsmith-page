@@ -11,8 +11,8 @@
   dists:
     - .tar.gz
     - .tar.bz2
-- version: 0.2
-  title: Agentsmith 0.2
+- version: 0.1
+  title: Agentsmith 0.1
   dists:
     - .tar.gz
     - .tar.bz2
